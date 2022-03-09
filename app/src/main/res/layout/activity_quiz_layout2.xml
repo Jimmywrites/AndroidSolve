@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/math2"
+    tools:context=".QuizLayout2">
+
+    <TextView
+        android:id="@+id/first_text"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="306dp"
+
+        android:textColor="@color/black"
+        android:textSize="39sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="280dp"
+        android:textSize="69sp"
+        android:textColor="@color/black"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/first_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/last_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="306dp"
+        android:textSize="39sp"
+        android:text="4"
+        android:layout_marginEnd="89dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sign_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/equal_sign"
+        android:layout_width="131dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="294dp"
+        android:scaleX="0.3"
+        android:scaleY="0.4"
+        android:src="@drawable/equal"
+        app:layout_constraintStart_toEndOf="@+id/last_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:ems="4"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:hint="\?"
+        android:layout_marginEnd="111dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/equal_sign"
+        app:layout_constraintStart_toStartOf="@+id/first_text"
+        app:layout_constraintTop_toBottomOf="@+id/sign_text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Next"
+        android:textSize="15sp"
+        app:cornerRadius="99dp"
+
+        android:layout_marginTop="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/equal_sign" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
